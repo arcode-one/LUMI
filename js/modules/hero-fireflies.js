@@ -6,79 +6,82 @@ export function initHeroFireflies() {
 	const ctx = canvas.getContext("2d");
 	let width = 0;
 	let height = 0;
-	let flies = [];
+	let sparkles = [];
 
 	function resizeCanvas() {
 		width = canvas.width = canvas.offsetWidth;
 		height = canvas.height = canvas.offsetHeight;
 	}
 
-	function makeFly() {
+	function makeSparkle() {
 		return {
 			x: Math.random() * width,
 			y: Math.random() * height,
-			r: Math.random() * 2 + 0.5,
-			vx: (Math.random() - 0.5) * 0.4,
-			vy: (Math.random() - 0.5) * 0.4,
-			alpha: Math.random(),
-			da: (Math.random() - 0.5) * 0.012,
-			gold: Math.random() > 0.4,
+			size: Math.random() * 5 + 3,
+			vx: (Math.random() - 0.5) * 0.18,
+			vy: -0.05 - Math.random() * 0.16,
+			alpha: Math.random() * 0.42 + 0.14,
+			da: (Math.random() * 0.006 + 0.003) * (Math.random() > 0.5 ? 1 : -1),
+			rotation: Math.random() * Math.PI,
+			vr: (Math.random() - 0.5) * 0.006,
 		};
 	}
 
-	function initFlies() {
-		flies = [];
-		const amount = Math.min(70, Math.floor((width * height) / 9000));
+	function initSparkles() {
+		sparkles = [];
+		const amount = Math.min(28, Math.floor((width * height) / 24000));
 
 		for (let i = 0; i < amount; i += 1) {
-			flies.push(makeFly());
+			sparkles.push(makeSparkle());
 		}
 	}
 
-	function animateFlies() {
+	function drawStar(sparkle) {
+		const long = sparkle.size;
+		const short = sparkle.size * 0.28;
+
+		ctx.save();
+		ctx.translate(sparkle.x, sparkle.y);
+		ctx.rotate(sparkle.rotation);
+		ctx.globalAlpha = sparkle.alpha;
+		ctx.fillStyle = "rgba(63, 123, 53, 0.58)";
+		ctx.beginPath();
+		ctx.moveTo(0, -long);
+		ctx.quadraticCurveTo(short, -short, long, 0);
+		ctx.quadraticCurveTo(short, short, 0, long);
+		ctx.quadraticCurveTo(-short, short, -long, 0);
+		ctx.quadraticCurveTo(-short, -short, 0, -long);
+		ctx.fill();
+		ctx.restore();
+	}
+
+	function animateSparkles() {
 		ctx.clearRect(0, 0, width, height);
 
-		for (const fly of flies) {
-			fly.x += fly.vx;
-			fly.y += fly.vy;
-			fly.alpha += fly.da;
+		for (const sparkle of sparkles) {
+			sparkle.x += sparkle.vx;
+			sparkle.y += sparkle.vy;
+			sparkle.alpha += sparkle.da;
+			sparkle.rotation += sparkle.vr;
 
-			if (fly.alpha <= 0 || fly.alpha >= 1) fly.da *= -1;
-			if (fly.x < 0) fly.x = width;
-			if (fly.x > width) fly.x = 0;
-			if (fly.y < 0) fly.y = height;
-			if (fly.y > height) fly.y = 0;
+			if (sparkle.alpha <= 0.1 || sparkle.alpha >= 0.58) sparkle.da *= -1;
+			if (sparkle.x < -20) sparkle.x = width + 20;
+			if (sparkle.x > width + 20) sparkle.x = -20;
+			if (sparkle.y < -20) sparkle.y = height + 20;
+			if (sparkle.y > height + 20) sparkle.y = -20;
 
-			const gradient = ctx.createRadialGradient(
-				fly.x,
-				fly.y,
-				0,
-				fly.x,
-				fly.y,
-				fly.r * 4,
-			);
-			const color = fly.gold
-				? `rgba(201,168,76,${fly.alpha})`
-				: `rgba(232,221,208,${fly.alpha * 0.5})`;
-
-			gradient.addColorStop(0, color);
-			gradient.addColorStop(1, "transparent");
-
-			ctx.beginPath();
-			ctx.arc(fly.x, fly.y, fly.r * 4, 0, Math.PI * 2);
-			ctx.fillStyle = gradient;
-			ctx.fill();
+			drawStar(sparkle);
 		}
 
-		requestAnimationFrame(animateFlies);
+		requestAnimationFrame(animateSparkles);
 	}
 
 	resizeCanvas();
-	initFlies();
-	animateFlies();
+	initSparkles();
+	animateSparkles();
 
 	window.addEventListener("resize", () => {
 		resizeCanvas();
-		initFlies();
+		initSparkles();
 	});
 }
