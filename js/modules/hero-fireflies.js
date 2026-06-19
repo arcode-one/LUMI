@@ -2,11 +2,16 @@ export function initHeroFireflies() {
 	const canvas = document.querySelector("[data-hero-canvas]");
 
 	if (!canvas) return;
+	if (window.matchMedia("(max-width: 768px)").matches) return;
+	if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
 	const ctx = canvas.getContext("2d");
+	const hero = canvas.closest(".hero");
 	let width = 0;
 	let height = 0;
 	let sparkles = [];
+	let animationId = null;
+	let isVisible = true;
 
 	function resizeCanvas() {
 		width = canvas.width = canvas.offsetWidth;
@@ -44,7 +49,7 @@ export function initHeroFireflies() {
 		ctx.translate(sparkle.x, sparkle.y);
 		ctx.rotate(sparkle.rotation);
 		ctx.globalAlpha = sparkle.alpha;
-		ctx.fillStyle = "rgba(63, 123, 53, 0.58)";
+		ctx.fillStyle = "rgba(186, 163, 99, 0.68)";
 		ctx.beginPath();
 		ctx.moveTo(0, -long);
 		ctx.quadraticCurveTo(short, -short, long, 0);
@@ -56,6 +61,11 @@ export function initHeroFireflies() {
 	}
 
 	function animateSparkles() {
+		if (!isVisible) {
+			animationId = null;
+			return;
+		}
+
 		ctx.clearRect(0, 0, width, height);
 
 		for (const sparkle of sparkles) {
@@ -73,12 +83,27 @@ export function initHeroFireflies() {
 			drawStar(sparkle);
 		}
 
-		requestAnimationFrame(animateSparkles);
+		animationId = requestAnimationFrame(animateSparkles);
 	}
 
 	resizeCanvas();
 	initSparkles();
-	animateSparkles();
+	animationId = requestAnimationFrame(animateSparkles);
+
+	if (hero) {
+		const observer = new IntersectionObserver(
+			([entry]) => {
+				isVisible = entry.isIntersecting;
+
+				if (isVisible && animationId === null) {
+					animationId = requestAnimationFrame(animateSparkles);
+				}
+			},
+			{ threshold: 0 },
+		);
+
+		observer.observe(hero);
+	}
 
 	window.addEventListener("resize", () => {
 		resizeCanvas();

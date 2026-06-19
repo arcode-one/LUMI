@@ -14,9 +14,25 @@ export function initNavigation() {
 	const desktopQuery = window.matchMedia("(min-width: 1025px)");
 
 	if (header) {
-		window.addEventListener("scroll", () => {
+		let ticking = false;
+
+		function updateHeaderState() {
 			header.classList.toggle(HEADER_SCROLLED_CLASS, window.scrollY > 60);
-		});
+			ticking = false;
+		}
+
+		window.addEventListener(
+			"scroll",
+			() => {
+				if (ticking) return;
+
+				ticking = true;
+				requestAnimationFrame(updateHeaderState);
+			},
+			{ passive: true },
+		);
+
+		updateHeaderState();
 	}
 
 	if (!toggle || !menu || !overlay) return;
