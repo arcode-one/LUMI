@@ -14,8 +14,8 @@ html {
 
 body {
 	min-width: 320px;
-	background: var(--forest);
-	color: var(--cream);
+	background: var(--cream);
+	color: var(--ink);
 	font-family: var(--font-text);
 	font-size: 16px;
 	line-height: 1.7;
@@ -79,7 +79,7 @@ button::-moz-focus-inner,
 }
 
 ::-webkit-scrollbar-track {
-	background: var(--forest);
+	background: var(--cream);
 }
 
 ::-webkit-scrollbar-thumb {

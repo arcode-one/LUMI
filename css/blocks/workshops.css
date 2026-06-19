@@ -1,6 +1,5 @@
 .workshops {
-	background:
-		linear-gradient(180deg, #88937f, #9aa28d);
+	background: var(--cream);
 }
 
 .workshops__header,
@@ -17,7 +16,7 @@
 
 .workshops__description {
 	max-width: 560px;
-	color: rgba(247, 239, 226, 0.78);
+	color: rgba(36, 48, 39, 0.74);
 	font-size: 15px;
 	line-height: 1.8;
 }
@@ -33,7 +32,7 @@
 	border: 1px solid rgba(247, 239, 226, 0.38);
 	border-radius: 8px;
 	background: linear-gradient(135deg, var(--clay2), var(--clay));
-	box-shadow: 0 24px 70px rgba(96, 64, 31, 0.16);
+	box-shadow: 0 24px 70px rgba(36, 59, 42, 0.18);
 }
 
 .bundle__tag {
@@ -131,7 +130,7 @@
 	padding: 40px 32px;
 	border-radius: 8px;
 	background: var(--clay);
-	box-shadow: 0 20px 58px rgba(96, 64, 31, 0.14);
+	box-shadow: 0 20px 58px rgba(36, 59, 42, 0.16);
 	transition:
 		background 0.4s;
 }

@@ -1,6 +1,5 @@
 .suppliers {
-	background:
-		linear-gradient(180deg, #aeb49f, #929b86);
+	background: var(--cream);
 	color: var(--ink);
 }
 
@@ -15,7 +14,7 @@
 	border: 1px solid rgba(247, 239, 226, 0.34);
 	border-radius: 8px;
 	background: var(--clay);
-	box-shadow: 0 24px 70px rgba(96, 64, 31, 0.18);
+	box-shadow: 0 24px 70px rgba(36, 59, 42, 0.18);
 }
 
 .suppliers__eyebrow {
@@ -31,7 +30,7 @@
 }
 
 .suppliers .title {
-	color: var(--cream);
+	color: var(--ink);
 }
 
 .suppliers__title {

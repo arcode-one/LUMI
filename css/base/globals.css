@@ -24,12 +24,12 @@ body::before {
 	background-image:
 		radial-gradient(
 			circle at 20% 30%,
-			rgba(95, 67, 40, 0.18) 0 1px,
+			rgba(53, 91, 51, 0.18) 0 1px,
 			transparent 1px
 		),
 		radial-gradient(
 			circle at 76% 64%,
-			rgba(247, 239, 226, 0.16) 0 1px,
+			rgba(243, 241, 232, 0.16) 0 1px,
 			transparent 1px
 		);
 	background-size:
@@ -71,7 +71,7 @@ h3 {
 	font-size: clamp(36px, 5vw, 60px);
 	font-weight: 300;
 	line-height: 1.15;
-	color: var(--cream);
+	color: var(--ink);
 	margin-bottom: 24px;
 	overflow-wrap: break-word;
 	hyphens: auto;
@@ -115,17 +115,17 @@ h3 {
 
 .button--primary:hover {
 	background: var(--clay);
-	box-shadow: 0 12px 30px rgba(95, 67, 40, 0.24);
+	box-shadow: 0 12px 30px rgba(53, 91, 51, 0.24);
 }
 
 .button--ghost {
-	border-color: rgba(247, 239, 226, 0.52);
-	color: var(--cream);
+	border-color: rgba(53, 91, 51, 0.34);
+	color: var(--clay3);
 }
 
 .button--ghost:hover {
-	border-color: var(--pearl);
-	color: #fdf9f4;
+	border-color: var(--clay2);
+	color: var(--gold);
 }
 
 .button--outline {

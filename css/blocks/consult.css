@@ -1,5 +1,5 @@
 .consult {
-	background: linear-gradient(180deg, #87927e, #9aa28d);
+	background: var(--cream);
 }
 
 .consult__grid {

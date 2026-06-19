@@ -18,18 +18,7 @@
 .hero__background {
 	position: absolute;
 	inset: 0;
-	background:
-		radial-gradient(
-			ellipse 64% 78% at 72% 36%,
-			rgba(238, 228, 211, 0.22) 0%,
-			transparent 62%
-		),
-		radial-gradient(
-			ellipse 52% 64% at 20% 18%,
-			rgba(121, 86, 47, 0.22) 0%,
-			transparent 58%
-		),
-		linear-gradient(135deg, #77836f 0%, var(--forest) 46%, #a4aa96 100%);
+	background: var(--cream);
 }
 
 .hero__inner {
@@ -53,7 +42,7 @@
 .hero__eyebrow {
 	max-width: 620px;
 	margin-bottom: 24px;
-	color: var(--cream);
+	color: var(--gold);
 	font-size: 12px;
 	letter-spacing: 0.24em;
 	text-transform: uppercase;
@@ -63,7 +52,7 @@
 .hero__title {
 	max-width: 690px;
 	margin-bottom: 8px;
-	color: var(--cream);
+	color: var(--ink);
 	font-family: var(--font-title);
 	font-size: clamp(52px, 8vw, 96px);
 	font-weight: 300;
@@ -72,14 +61,14 @@
 }
 
 .hero__title em {
-	color: var(--clay3);
+	color: var(--gold);
 	font-style: italic;
 }
 
 .hero__subtitle {
 	max-width: 600px;
 	margin-bottom: 32px;
-	color: var(--pearl);
+	color: var(--muted);
 	font-family: var(--font-title);
 	font-size: clamp(18px, 2.5vw, 26px);
 	font-style: italic;
@@ -90,7 +79,7 @@
 .hero__text {
 	max-width: 500px;
 	margin-bottom: 48px;
-	color: rgba(247, 239, 226, 0.8);
+	color: rgba(36, 48, 39, 0.76);
 	font-size: 15px;
 	line-height: 1.8;
 	animation: fade-up 0.9s 0.9s forwards;
@@ -127,8 +116,8 @@
 	inset: 0;
 	z-index: 1;
 	background:
-		linear-gradient(90deg, rgba(96, 64, 31, 0.28) 0%, transparent 42%),
-		linear-gradient(0deg, rgba(62, 58, 47, 0.34) 0%, transparent 32%);
+		linear-gradient(90deg, rgba(36, 59, 42, 0.28) 0%, transparent 42%),
+		linear-gradient(0deg, rgba(36, 48, 39, 0.34) 0%, transparent 32%);
 }
 
 @media (max-width: 1440px) {

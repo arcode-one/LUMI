@@ -1,13 +1,7 @@
 .offer {
 	min-height: 100vh;
 	padding: 148px var(--container-side) 100px;
-	background:
-		radial-gradient(
-			ellipse 70% 50% at 80% 0%,
-			rgba(95, 67, 40, 0.12),
-			transparent 60%
-		),
-		linear-gradient(180deg, var(--forest), var(--forest2));
+	background: var(--cream);
 }
 
 .offer__inner {
@@ -19,9 +13,9 @@
 	max-width: 980px;
 	margin: 0 auto;
 	padding: 64px;
-	border: 1px solid rgba(95, 67, 40, 0.35);
-	background: rgba(245, 239, 230, 0.96);
-	box-shadow: 0 24px 80px rgba(0, 0, 0, 0.18);
+	border: 1px solid rgba(53, 91, 51, 0.28);
+	background: var(--ivory);
+	box-shadow: 0 24px 80px rgba(36, 48, 39, 0.1);
 	color: #2f382b;
 }
 

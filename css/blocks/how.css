@@ -1,6 +1,5 @@
 .how {
-	background:
-		linear-gradient(180deg, #aeb49f, #8d9783);
+	background: var(--cream);
 	color: var(--ink);
 }
 
@@ -23,16 +22,16 @@
 	gap: 32px;
 	align-items: start;
 	padding: 40px 0;
-	border-top: 1px solid rgba(96, 64, 31, 0.24);
+	border-top: 1px solid rgba(53, 91, 51, 0.22);
 }
 
 .how__step:last-child {
-	border-bottom: 1px solid rgba(96, 64, 31, 0.24);
+	border-bottom: 1px solid rgba(53, 91, 51, 0.22);
 }
 
 .how__step-number {
 	padding-top: 4px;
-	color: rgba(96, 64, 31, 0.34);
+	color: rgba(53, 91, 51, 0.36);
 	font-family: var(--font-title);
 	font-size: 56px;
 	font-weight: 300;

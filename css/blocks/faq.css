@@ -1,6 +1,5 @@
 .faq {
-	background:
-		linear-gradient(180deg, #aeb49f, #909a85);
+	background: var(--cream);
 	color: var(--ink);
 }
 
@@ -14,7 +13,7 @@
 }
 
 .faq .title {
-	color: var(--cream);
+	color: var(--ink);
 }
 
 .faq .title em {
@@ -22,11 +21,11 @@
 }
 
 .faq__item {
-	border-top: 1px solid rgba(96, 64, 31, 0.24);
+	border-top: 1px solid rgba(53, 91, 51, 0.22);
 }
 
 .faq__item:last-child {
-	border-bottom: 1px solid rgba(96, 64, 31, 0.24);
+	border-bottom: 1px solid rgba(53, 91, 51, 0.22);
 }
 
 .faq__question {

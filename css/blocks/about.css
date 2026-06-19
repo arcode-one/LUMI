@@ -1,7 +1,5 @@
 .about {
-	background:
-		linear-gradient(180deg, rgba(174, 180, 159, 0.95), rgba(154, 162, 141, 0.96)),
-		var(--forest2);
+	background: var(--cream);
 	color: var(--ink);
 }
 
@@ -31,7 +29,7 @@
 	left: -16px;
 	right: 16px;
 	bottom: 16px;
-	border: 1px solid rgba(96, 64, 31, 0.45);
+	border: 1px solid rgba(53, 91, 51, 0.34);
 	pointer-events: none;
 }
 
@@ -48,7 +46,7 @@
 }
 
 .about .title {
-	color: var(--cream);
+	color: var(--ink);
 }
 
 .about__text {

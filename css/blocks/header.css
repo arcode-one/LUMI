@@ -13,9 +13,9 @@
 
 .header--scrolled,
 .header--menu-open {
-	background: rgba(111, 121, 104, 0.88);
+	background: var(--cream);
 	backdrop-filter: blur(18px);
-	border-bottom: 1px solid rgba(95, 67, 40, 0.24);
+	border-bottom: 1px solid rgba(53, 91, 51, 0.16);
 }
 
 .header--scrolled {
@@ -61,7 +61,7 @@
 
 .header__link {
 	position: relative;
-	color: var(--pearl);
+	color: rgba(36, 48, 39, 0.72);
 	text-decoration: none;
 	font-size: 14px;
 	letter-spacing: 0.06em;
@@ -105,7 +105,7 @@
 	height: 46px;
 	align-items: center;
 	justify-content: center;
-	border: 1px solid rgba(95, 67, 40, 0.45);
+	border: 1px solid rgba(53, 91, 51, 0.28);
 	background: transparent;
 	cursor: pointer;
 }
@@ -148,8 +148,8 @@
 	width: min(420px, 100%);
 	height: 100dvh;
 	padding: 98px var(--container-padding) 32px;
-	background: rgba(111, 121, 104, 0.97);
-	border-left: 1px solid rgba(95, 67, 40, 0.24);
+	background: rgba(243, 241, 232, 0.98);
+	border-left: 1px solid rgba(53, 91, 51, 0.16);
 	box-shadow: -20px 0 60px rgba(0, 0, 0, 0.18);
 	transform: translateX(100%);
 	visibility: hidden;
@@ -174,8 +174,8 @@
 	display: flex;
 	align-items: center;
 	min-height: 54px;
-	border-bottom: 1px solid rgba(95, 67, 40, 0.12);
-	color: var(--pearl);
+	border-bottom: 1px solid rgba(53, 91, 51, 0.12);
+	color: var(--ink);
 	text-decoration: none;
 	font-family: var(--font-title);
 	font-size: 28px;
@@ -199,7 +199,7 @@
 	position: fixed;
 	inset: 0;
 	z-index: 820;
-	background: rgba(38, 52, 32, 0.42);
+	background: rgba(36, 48, 39, 0.24);
 	opacity: 0;
 	visibility: hidden;
 	transition:
