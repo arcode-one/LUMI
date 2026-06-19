@@ -1,5 +1,7 @@
 .suppliers {
-	background: var(--forest2);
+	background:
+		linear-gradient(180deg, #aeb49f, #929b86);
+	color: var(--ink);
 }
 
 .suppliers__card {
@@ -10,13 +12,15 @@
 	max-width: var(--container);
 	margin: 60px auto 0;
 	padding: 56px 60px;
-	border: 1px solid rgba(201, 168, 76, 0.3);
-	background: var(--forest3);
+	border: 1px solid rgba(247, 239, 226, 0.34);
+	border-radius: 8px;
+	background: var(--clay);
+	box-shadow: 0 24px 70px rgba(96, 64, 31, 0.18);
 }
 
 .suppliers__eyebrow {
 	margin-bottom: 12px;
-	color: var(--gold);
+	color: var(--cream);
 	font-size: 11px;
 	letter-spacing: 0.22em;
 	text-transform: uppercase;
@@ -24,6 +28,10 @@
 
 .suppliers__eyebrow::before {
 	content: "✦ ";
+}
+
+.suppliers .title {
+	color: var(--cream);
 }
 
 .suppliers__title {
@@ -39,12 +47,20 @@
 	margin-top: 20px;
 }
 
+.suppliers .check-list__item {
+	color: rgba(247, 239, 226, 0.76);
+}
+
+.suppliers .check-list__item::before {
+	color: var(--cream);
+}
+
 .suppliers__aside {
 	text-align: center;
 }
 
 .suppliers__price {
-	color: var(--gold);
+	color: var(--cream);
 	font-family: var(--font-title);
 	font-size: 48px;
 	font-weight: 300;
@@ -54,7 +70,7 @@
 .suppliers__label {
 	margin-top: 4px;
 	margin-bottom: 20px;
-	color: var(--cream);
+	color: rgba(247, 239, 226, 0.62);
 	font-size: 12px;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
@@ -66,8 +82,8 @@
 	justify-content: center;
 	min-height: 48px;
 	padding: 14px 28px;
-	background: var(--gold);
-	color: var(--forest);
+	background: var(--cream);
+	color: var(--clay3);
 	font-size: 13px;
 	font-weight: 600;
 	letter-spacing: 0.1em;
@@ -79,7 +95,7 @@
 }
 
 .suppliers__button:hover {
-	background: var(--gold2);
+	background: var(--pearl);
 	transform: translateY(-2px);
 }
 

@@ -1,5 +1,7 @@
 .faq {
-	background: var(--forest);
+	background:
+		linear-gradient(180deg, #aeb49f, #909a85);
+	color: var(--ink);
 }
 
 .faq__inner {
@@ -11,12 +13,20 @@
 	margin-top: 60px;
 }
 
+.faq .title {
+	color: var(--cream);
+}
+
+.faq .title em {
+	color: var(--gold);
+}
+
 .faq__item {
-	border-top: 1px solid rgba(201, 168, 76, 0.15);
+	border-top: 1px solid rgba(96, 64, 31, 0.24);
 }
 
 .faq__item:last-child {
-	border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+	border-bottom: 1px solid rgba(96, 64, 31, 0.24);
 }
 
 .faq__question {
@@ -28,7 +38,7 @@
 	padding: 24px 0;
 	border: 0;
 	background: transparent;
-	color: var(--cream);
+	color: var(--ink);
 	font-family: var(--font-title);
 	font-size: 20px;
 	font-weight: 400;
@@ -84,7 +94,7 @@
 .faq__answer {
 	max-height: 0;
 	overflow: hidden;
-	color: rgba(232, 221, 208, 0.75);
+	color: rgba(62, 58, 47, 0.86);
 	font-size: 14px;
 	line-height: 1.9;
 	transition:

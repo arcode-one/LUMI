@@ -18,11 +18,18 @@
 .hero__background {
 	position: absolute;
 	inset: 0;
-	background: radial-gradient(
-		ellipse 60% 80% at 70% 40%,
-		rgba(79, 102, 66, 0.5) 0%,
-		var(--forest) 70%
-	);
+	background:
+		radial-gradient(
+			ellipse 64% 78% at 72% 36%,
+			rgba(238, 228, 211, 0.22) 0%,
+			transparent 62%
+		),
+		radial-gradient(
+			ellipse 52% 64% at 20% 18%,
+			rgba(121, 86, 47, 0.22) 0%,
+			transparent 58%
+		),
+		linear-gradient(135deg, #77836f 0%, var(--forest) 46%, #a4aa96 100%);
 }
 
 .hero__inner {
@@ -46,7 +53,7 @@
 .hero__eyebrow {
 	max-width: 620px;
 	margin-bottom: 24px;
-	color: var(--gold);
+	color: var(--cream);
 	font-size: 12px;
 	letter-spacing: 0.24em;
 	text-transform: uppercase;
@@ -65,7 +72,7 @@
 }
 
 .hero__title em {
-	color: var(--gold);
+	color: var(--clay3);
 	font-style: italic;
 }
 
@@ -83,7 +90,7 @@
 .hero__text {
 	max-width: 500px;
 	margin-bottom: 48px;
-	color: rgba(232, 221, 208, 0.8);
+	color: rgba(247, 239, 226, 0.8);
 	font-size: 15px;
 	line-height: 1.8;
 	animation: fade-up 0.9s 0.9s forwards;
@@ -120,8 +127,8 @@
 	inset: 0;
 	z-index: 1;
 	background:
-		linear-gradient(90deg, rgba(61, 82, 51, 0.45) 0%, transparent 42%),
-		linear-gradient(0deg, rgba(61, 82, 51, 0.55) 0%, transparent 32%);
+		linear-gradient(90deg, rgba(96, 64, 31, 0.28) 0%, transparent 42%),
+		linear-gradient(0deg, rgba(62, 58, 47, 0.34) 0%, transparent 32%);
 }
 
 @media (max-width: 1440px) {

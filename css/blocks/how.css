@@ -1,5 +1,7 @@
 .how {
-	background: var(--forest);
+	background:
+		linear-gradient(180deg, #aeb49f, #8d9783);
+	color: var(--ink);
 }
 
 .how__inner {
@@ -11,22 +13,26 @@
 	margin-top: 60px;
 }
 
+.how .title {
+	color: var(--ink);
+}
+
 .how__step {
 	display: grid;
 	grid-template-columns: 80px 1fr;
 	gap: 32px;
 	align-items: start;
 	padding: 40px 0;
-	border-top: 1px solid rgba(201, 168, 76, 0.15);
+	border-top: 1px solid rgba(96, 64, 31, 0.24);
 }
 
 .how__step:last-child {
-	border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+	border-bottom: 1px solid rgba(96, 64, 31, 0.24);
 }
 
 .how__step-number {
 	padding-top: 4px;
-	color: rgba(201, 168, 76, 0.22);
+	color: rgba(96, 64, 31, 0.34);
 	font-family: var(--font-title);
 	font-size: 56px;
 	font-weight: 300;
@@ -35,14 +41,14 @@
 
 .how__step-title {
 	margin-bottom: 10px;
-	color: var(--cream);
+	color: var(--ink);
 	font-family: var(--font-title);
 	font-size: 24px;
 	font-weight: 400;
 }
 
 .how__step-text {
-	color: rgba(232, 221, 208, 0.7);
+	color: rgba(62, 58, 47, 0.84);
 	font-size: 14px;
 	line-height: 1.8;
 }

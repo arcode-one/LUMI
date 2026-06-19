@@ -1,69 +1,21 @@
-@font-face {
-	font-family: "Golos Text";
-	src: url("../../fonts/golos-text-regular.woff2") format("woff2");
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: "Golos Text";
-	src: url("../../fonts/golos-text-medium.woff2") format("woff2");
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: "Golos Text";
-	src: url("../../fonts/golos-text-semibold.woff2") format("woff2");
-	font-weight: 600;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: "Cormorant Garamond";
-	src: url("../../fonts/cormorant-garamond-light.woff2") format("woff2");
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: "Cormorant Garamond";
-	src: url("../../fonts/cormorant-garamond-regular.woff2") format("woff2");
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: "Cormorant Garamond";
-	src: url("../../fonts/cormorant-garamond-semibold.woff2") format("woff2");
-	font-weight: 600;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: "Cormorant Garamond";
-	src: url("../../fonts/cormorant-garamond-light-italic.woff2") format("woff2");
-	font-weight: 300;
-	font-style: italic;
-	font-display: swap;
-}
-@font-face {
-	font-family: "Cormorant Garamond";
-	src: url("../../fonts/cormorant-garamond-regular-italic.woff2")
-		format("woff2");
-	font-weight: 400;
-	font-style: italic;
-	font-display: swap;
-}
-
 :root {
-	--forest: #3d5233;
-	--forest2: #4f6642;
-	--forest3: #5d7a4d;
-	--cream: #f5efe6;
-	--gold: #c9a84c;
-	--gold2: #e2c97a;
-	--pearl: #e8ddd0;
+	--forest: #838d7a;
+	--forest2: #9aa28d;
+	--forest3: #aeb49f;
+	--cream: #f7efe2;
+	--gold: #765435;
+	--gold2: #92704b;
+	--pearl: #eee4d3;
+	--ivory: #e9e4d6;
+	--ivory2: #d8d2bf;
+	--ink: #3e3a2f;
+	--muted: #706c5d;
+	--clay: #7b6043;
+	--clay2: #907150;
+	--clay3: #5f4328;
+	--clay-soft: #ad9272;
+	--line: rgba(95, 67, 40, 0.24);
+	--line-light: rgba(247, 239, 226, 0.34);
 	--container: 1440px;
 	--container-padding: 48px;
 	--container-side: max(

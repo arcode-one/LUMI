@@ -1,7 +1,7 @@
 .cta {
 	position: relative;
 	overflow: hidden;
-	background: var(--forest2);
+	background: linear-gradient(180deg, #8d9783, #77836f);
 	text-align: center;
 }
 
@@ -15,7 +15,7 @@
 	border-radius: 50%;
 	background: radial-gradient(
 		circle,
-		rgba(201, 168, 76, 0.06) 0%,
+		rgba(95, 67, 40, 0.06) 0%,
 		transparent 70%
 	);
 	transform: translate(-50%, -50%);
@@ -31,7 +31,7 @@
 
 .cta__eyebrow {
 	margin-bottom: 20px;
-	color: var(--gold);
+	color: var(--cream);
 	font-size: 11px;
 	letter-spacing: 0.28em;
 	text-transform: uppercase;
@@ -47,14 +47,14 @@
 }
 
 .cta__title em {
-	color: var(--gold);
+	color: var(--cream);
 	font-style: italic;
 }
 
 .cta__text {
 	max-width: 640px;
 	margin: 0 auto 48px;
-	color: rgba(232, 221, 208, 0.7);
+	color: rgba(247, 239, 226, 0.7);
 	font-size: 15px;
 	line-height: 1.7;
 }
@@ -67,9 +67,18 @@
 }
 
 .cta__card {
-	display: block;
+	display: flex;
+	flex: 1 1 0;
+	width: 100%;
+	min-width: 0;
+	min-height: 104px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	padding: 20px 28px;
-	border: 1px solid rgba(201, 168, 76, 0.3);
+	border: 1px solid rgba(247, 239, 226, 0.38);
+	border-radius: 8px;
+	background: var(--clay);
 	color: var(--pearl);
 	font-size: 14px;
 	text-decoration: none;
@@ -81,9 +90,9 @@
 }
 
 .cta__card:hover {
-	border-color: var(--gold);
-	background: rgba(201, 168, 76, 0.05);
-	color: var(--gold);
+	border-color: var(--cream);
+	background: var(--clay2);
+	color: var(--cream);
 }
 
 .cta__card-title {
@@ -96,13 +105,13 @@
 }
 
 .cta__card--featured {
-	border-color: rgba(201, 168, 76, 0.55);
-	background: rgba(201, 168, 76, 0.04);
+	border-color: rgba(247, 239, 226, 0.58);
+	background: var(--clay2);
 }
 
 .cta__card--featured .cta__card-title,
 .cta__card--featured .cta__card-text {
-	color: var(--gold);
+	color: var(--cream);
 }
 
 @media (max-width: 1440px) {
@@ -120,6 +129,7 @@
 
 @media (max-width: 1024px) {
 	.cta__card {
+		flex-basis: calc(50% - 7px);
 		min-width: 250px;
 	}
 }
@@ -138,6 +148,7 @@
 
 @media (max-width: 768px) {
 	.cta__card {
+		flex-basis: auto;
 		width: calc(50% - 8px);
 		min-width: 0;
 	}
@@ -145,6 +156,7 @@
 
 @media (max-width: 640px) {
 	.cta__card {
+		flex-basis: auto;
 		width: 100%;
 	}
 }

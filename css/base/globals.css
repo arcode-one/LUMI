@@ -9,11 +9,43 @@
 	z-index: 1000;
 	width: 0%;
 	height: 2px;
-	background: linear-gradient(90deg, var(--gold), var(--gold2));
+	background: linear-gradient(90deg, var(--clay3), var(--clay-soft));
 }
 
 .main {
 	overflow: hidden;
+}
+
+body::before {
+	content: "";
+	position: fixed;
+	inset: 0;
+	z-index: 2000;
+	background-image:
+		radial-gradient(
+			circle at 20% 30%,
+			rgba(95, 67, 40, 0.18) 0 1px,
+			transparent 1px
+		),
+		radial-gradient(
+			circle at 76% 64%,
+			rgba(247, 239, 226, 0.16) 0 1px,
+			transparent 1px
+		);
+	background-size:
+		18px 18px,
+		23px 23px;
+	mix-blend-mode: soft-light;
+	opacity: 0.16;
+	pointer-events: none;
+}
+
+h1,
+h2,
+h3 {
+	max-width: 100%;
+	overflow-wrap: break-word;
+	hyphens: auto;
 }
 
 .section {
@@ -34,12 +66,15 @@
 }
 
 .title {
+	max-width: 100%;
 	font-family: var(--font-title);
 	font-size: clamp(36px, 5vw, 60px);
 	font-weight: 300;
 	line-height: 1.15;
 	color: var(--cream);
 	margin-bottom: 24px;
+	overflow-wrap: break-word;
+	hyphens: auto;
 }
 
 .title em {
@@ -74,18 +109,18 @@
 }
 
 .button--primary {
-	background: var(--gold);
-	color: var(--forest);
+	background: var(--clay3);
+	color: var(--cream);
 }
 
 .button--primary:hover {
-	background: var(--gold2);
-	box-shadow: 0 12px 30px rgba(201, 168, 76, 0.3);
+	background: var(--clay);
+	box-shadow: 0 12px 30px rgba(95, 67, 40, 0.24);
 }
 
 .button--ghost {
-	border-color: rgba(232, 221, 208, 0.4);
-	color: var(--pearl);
+	border-color: rgba(247, 239, 226, 0.52);
+	color: var(--cream);
 }
 
 .button--ghost:hover {
@@ -100,16 +135,7 @@
 
 .button--outline:hover {
 	background: var(--gold);
-	color: var(--forest);
-}
-
-.lace {
-	text-align: center;
-	padding: 12px var(--container-side);
-	color: var(--gold);
-	font-size: 20px;
-	letter-spacing: 0.3em;
-	opacity: 0.6;
+	color: var(--cream);
 }
 
 [data-reveal] {
@@ -136,7 +162,7 @@
 	position: relative;
 	padding-left: 18px;
 	font-size: 14px;
-	color: rgba(232, 221, 208, 0.75);
+	color: rgba(247, 239, 226, 0.82);
 }
 
 .check-list__item::before {
@@ -201,13 +227,6 @@
 
 	.title {
 		font-size: clamp(32px, 7vw, 48px);
-	}
-}
-
-@media (max-width: 640px) {
-	.lace {
-		font-size: 18px;
-		letter-spacing: 0.22em;
 	}
 }
 

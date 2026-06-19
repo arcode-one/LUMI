@@ -1,5 +1,5 @@
 .consult {
-	background: var(--forest);
+	background: linear-gradient(180deg, #87927e, #9aa28d);
 }
 
 .consult__grid {
@@ -12,12 +12,13 @@
 
 .consult__copy {
 	padding: 52px 48px;
-	background: var(--forest2);
+	border-radius: 8px 0 0 8px;
+	background: var(--clay);
 }
 
 .consult__text {
 	margin-bottom: 28px;
-	color: rgba(232, 221, 208, 0.8);
+	color: rgba(247, 239, 226, 0.8);
 	font-size: 15px;
 	line-height: 1.9;
 }
@@ -32,12 +33,13 @@
 	align-items: flex-start;
 	justify-content: center;
 	padding: 52px 48px;
-	background: var(--forest3);
+	border-radius: 0 8px 8px 0;
+	background: var(--clay2);
 }
 
 .consult__eyebrow {
 	margin-bottom: 16px;
-	color: var(--gold);
+	color: var(--cream);
 	font-size: 11px;
 	letter-spacing: 0.22em;
 	text-transform: uppercase;
@@ -49,7 +51,7 @@
 
 .consult__price {
 	margin-bottom: 8px;
-	color: var(--gold);
+	color: var(--cream);
 	font-family: var(--font-title);
 	font-size: 64px;
 	font-weight: 300;
@@ -58,7 +60,7 @@
 
 .consult__label {
 	margin-bottom: 32px;
-	color: rgba(232, 221, 208, 0.55);
+	color: rgba(247, 239, 226, 0.55);
 	font-size: 13px;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
@@ -67,7 +69,7 @@
 .consult__quote {
 	margin-bottom: 40px;
 	padding-left: 20px;
-	border-left: 2px solid var(--gold);
+	border-left: 2px solid rgba(247, 239, 226, 0.45);
 	color: var(--pearl);
 	font-family: var(--font-title);
 	font-size: 20px;
@@ -81,8 +83,8 @@
 	justify-content: center;
 	min-height: 48px;
 	padding: 14px 28px;
-	background: var(--gold);
-	color: var(--forest);
+	background: var(--cream);
+	color: var(--clay3);
 	font-size: 13px;
 	font-weight: 600;
 	letter-spacing: 0.1em;
@@ -94,7 +96,7 @@
 }
 
 .consult__button:hover {
-	background: var(--gold2);
+	background: var(--pearl);
 	transform: translateY(-2px);
 }
 
@@ -115,6 +117,14 @@
 @media (max-width: 1024px) {
 	.consult__grid {
 		grid-template-columns: 1fr;
+	}
+
+	.consult__copy {
+		border-radius: 8px 8px 0 0;
+	}
+
+	.consult__offer {
+		border-radius: 0 0 8px 8px;
 	}
 }
 
