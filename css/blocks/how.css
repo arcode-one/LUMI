@@ -1,0 +1,115 @@
+.how {
+	background: var(--forest);
+}
+
+.how__inner {
+	max-width: var(--container);
+	margin: 0 auto;
+}
+
+.how__steps {
+	margin-top: 60px;
+}
+
+.how__step {
+	display: grid;
+	grid-template-columns: 80px 1fr;
+	gap: 32px;
+	align-items: start;
+	padding: 40px 0;
+	border-top: 1px solid rgba(201, 168, 76, 0.15);
+}
+
+.how__step:last-child {
+	border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+}
+
+.how__step-number {
+	padding-top: 4px;
+	color: rgba(201, 168, 76, 0.22);
+	font-family: var(--font-title);
+	font-size: 56px;
+	font-weight: 300;
+	line-height: 1;
+}
+
+.how__step-title {
+	margin-bottom: 10px;
+	color: var(--cream);
+	font-family: var(--font-title);
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.how__step-text {
+	color: rgba(232, 221, 208, 0.7);
+	font-size: 14px;
+	line-height: 1.8;
+}
+
+@media (max-width: 1440px) {
+	.how__steps {
+		margin-top: 56px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.how__step {
+		padding: 36px 0;
+	}
+}
+
+@media (max-width: 1024px) {
+	.how__step {
+		grid-template-columns: 72px 1fr;
+	}
+}
+
+@media (max-width: 992px) {
+	.how__step-number {
+		font-size: 52px;
+	}
+}
+
+@media (max-width: 820px) {
+	.how__step {
+		gap: 26px;
+	}
+}
+
+@media (max-width: 768px) {
+	.how__step {
+		grid-template-columns: 1fr;
+		gap: 12px;
+	}
+}
+
+@media (max-width: 640px) {
+	.how__steps {
+		margin-top: 48px;
+	}
+}
+
+@media (max-width: 576px) {
+	.how__step-title {
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 430px) {
+	.how__step-number {
+		font-size: 46px;
+	}
+}
+
+@media (max-width: 390px) {
+	.how__step {
+		padding: 32px 0;
+	}
+}
+
+@media (max-width: 360px) {
+	.how__step-text {
+		font-size: 13px;
+	}
+}

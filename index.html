@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>LUMI — Украшения из волшебства</title>
+		<link rel="stylesheet" href="css/main.css" />
+		<script type="module" src="js/main.js"></script>
+	</head>
+	<body class="page">
+		<div class="progress" data-progress></div>
+
+		<header class="header" data-header>
+			<div class="header__inner">
+				<a href="#" class="header__logo" aria-label="LUMI">
+					<img
+						src="icons/logo-lumi-gold.svg"
+						alt=""
+						class="header__logo-image"
+					/>
+				</a>
+
+				<nav class="header__nav" aria-label="Основная навигация">
+					<ul class="header__list">
+						<li class="header__item">
+							<a href="#about" class="header__link">Обо мне</a>
+						</li>
+						<li class="header__item">
+							<a href="#workshops" class="header__link">Мастер-классы</a>
+						</li>
+						<li class="header__item">
+							<a href="#suppliers" class="header__link">База поставщиков</a>
+						</li>
+						<li class="header__item">
+							<a href="#consult" class="header__link">Консультация</a>
+						</li>
+						<li class="header__item">
+							<a href="#reviews" class="header__link">Отзывы</a>
+						</li>
+						<li class="header__item">
+							<a href="#faq" class="header__link">Вопросы</a>
+						</li>
+					</ul>
+				</nav>
+
+				<a
+					href="https://t.me/sofiabei"
+					target="_blank"
+					class="button button--outline header__cta"
+					>Записаться</a
+				>
+
+				<button
+					class="header__burger"
+					type="button"
+					aria-label="Открыть меню"
+					aria-controls="mobile-menu"
+					aria-expanded="false"
+					data-menu-toggle
+				>
+					<span class="header__burger-line"></span>
+					<span class="header__burger-line"></span>
+					<span class="header__burger-line"></span>
+				</button>
+			</div>
+		</header>
+
+		<div
+			class="mobile-menu"
+			id="mobile-menu"
+			aria-hidden="true"
+			data-mobile-menu
+		>
+			<nav class="mobile-menu__nav" aria-label="Мобильная навигация">
+				<a href="#about" class="mobile-menu__link" data-mobile-link>Обо мне</a>
+				<a href="#workshops" class="mobile-menu__link" data-mobile-link>
+					Мастер-классы
+				</a>
+				<a href="#suppliers" class="mobile-menu__link" data-mobile-link>
+					База поставщиков
+				</a>
+				<a href="#consult" class="mobile-menu__link" data-mobile-link>
+					Консультация
+				</a>
+				<a href="#reviews" class="mobile-menu__link" data-mobile-link>Отзывы</a>
+				<a href="#faq" class="mobile-menu__link" data-mobile-link>Вопросы</a>
+				<a
+					href="https://t.me/sofiabei"
+					target="_blank"
+					class="button button--primary mobile-menu__cta"
+					data-mobile-link
+					>Записаться</a
+				>
+			</nav>
+		</div>
+		<div class="mobile-menu__overlay" data-menu-overlay></div>
+
+		<main class="main">
+			<section class="hero" id="hero">
+				<canvas class="hero__canvas" data-hero-canvas></canvas>
+				<div class="hero__background"></div>
+				<div class="hero__inner">
+					<div class="hero__content">
+						<p class="hero__eyebrow" data-reveal>
+							✦ Handmade украшения · Авторские мастер-классы
+						</p>
+						<h1 class="hero__title" data-reveal>
+							Украшения<br />из <em>волшебства</em>
+						</h1>
+						<p class="hero__subtitle" data-reveal>
+							Научись создавать магию своими руками
+						</p>
+						<p class="hero__text" data-reveal>
+							Меня зовут София. Два года я создаю украшения из натурального
+							жемчуга и природных материалов. Хочу научить тебя — даже если ты
+							никогда раньше не пробовала.
+						</p>
+						<div class="hero__actions" data-reveal>
+							<a href="#workshops" class="button button--primary">
+								Выбрать мастер-класс
+							</a>
+							<a href="#about" class="button button--ghost">Узнать о мастере</a>
+						</div>
+					</div>
+					<div class="hero__photo">
+						<img src="images/hero-img.webp" alt="София" class="hero__image" />
+					</div>
+				</div>
+			</section>
+
+			<div class="lace">· · ✦ · · · ✦ · · · ✦ · ·</div>
+
+			<section class="about section" id="about">
+				<div class="about__inner">
+					<div class="about__photo" data-reveal>
+						<img
+							src="images/about-img.webp"
+							alt="София — мастер украшений"
+							class="about__image"
+						/>
+					</div>
+					<div class="about__content">
+						<p class="eyebrow about__eyebrow" data-reveal>О мастере</p>
+						<h2 class="title about__title" data-reveal>
+							Меня зовут<br /><em>София</em>
+						</h2>
+						<blockquote class="about__quote" data-reveal>
+							«Каждое украшение — это маленькая история. Хочу научить тебя
+							писать свою»
+						</blockquote>
+						<p class="about__text" data-reveal>
+							Два года я делаю украшения из натурального жемчуга, природных
+							камней и необычной фурнитуры. Всё началось с желания носить что-то
+							особенное — то, чего нет ни у кого больше.
+						</p>
+						<p class="about__text" data-reveal>
+							Сегодня я провожу мастер-классы для тех, кто хочет создавать
+							украшения своими руками. Мои ученицы справляются даже без опыта —
+							я делаю всё, чтобы это было легко и приятно.
+						</p>
+						<div class="about__stats">
+							<div class="about__stat" data-reveal>
+								<div class="about__stat-value">2</div>
+								<div class="about__stat-label">Года опыта</div>
+							</div>
+							<div class="about__stat" data-reveal>
+								<div class="about__stat-value">↑</div>
+								<div class="about__stat-label">Десятки учеников</div>
+							</div>
+							<div class="about__stat" data-reveal>
+								<div class="about__stat-value">3</div>
+								<div class="about__stat-label">Мастер-класса</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="lace">· · ✦ · · · ✦ · · · ✦ · ·</div>
+
+			<section class="workshops section" id="workshops">
+				<div class="workshops__header">
+					<p class="eyebrow workshops__eyebrow" data-reveal>Мастер-классы</p>
+					<h2 class="title workshops__title" data-reveal>
+						Три украшения,<br />которые ты <em>создашь сама</em>
+					</h2>
+					<p class="workshops__description" data-reveal>
+						Все МК подходят даже без опыта. К каждому — видеоурок, список
+						материалов с аналогами на Ozon и обратная связь.
+					</p>
+				</div>
+
+				<div class="bundle" data-reveal>
+					<div class="bundle__content">
+						<div class="bundle__tag">Выгодный набор</div>
+						<div class="bundle__title">Все три мастер-класса сразу</div>
+						<div class="bundle__subtitle">
+							Серьги + Браслет + Колье — полная коллекция
+						</div>
+					</div>
+					<div class="bundle__price">
+						<div class="bundle__old-price">2 800 ₽</div>
+						<div class="bundle__current-price">2 300 ₽</div>
+						<div class="bundle__save">Скидка 500 ₽</div>
+					</div>
+					<a
+						href="https://t.me/sofiabei"
+						target="_blank"
+						class="bundle__button"
+					>
+						Купить набор →
+					</a>
+				</div>
+
+				<div class="workshops__grid">
+					<article class="workshop-card" data-reveal>
+						<div class="workshop-card__number">01</div>
+						<div class="workshop-card__gallery">
+							<img
+								src="images/workshops/Earrings-2.webp"
+								alt="Серьги из жемчуга"
+								class="workshop-card__image"
+							/>
+							<img
+								src="images/workshops/Earrings.webp"
+								alt="Процесс создания серёг"
+								class="workshop-card__image"
+							/>
+						</div>
+						<div class="workshop-card__tag">Для начинающих</div>
+						<h3 class="workshop-card__title">Серьги из трёх составляющих</h3>
+						<p class="workshop-card__text">
+							Создадим серьги из расходных материалов и натурального жемчуга.
+							Просто, изящно — и с первого раза.
+						</p>
+						<div class="workshop-card__includes">
+							<div class="workshop-card__includes-title">Что входит</div>
+							<ul class="workshop-card__list">
+								<li class="workshop-card__item">Видео мастер-класс</li>
+								<li class="workshop-card__item">
+									Список материалов: проф. магазины + Ozon
+								</li>
+								<li class="workshop-card__item">
+									Обратная связь по любым вопросам
+								</li>
+							</ul>
+						</div>
+						<div class="workshop-card__price">600 ₽</div>
+						<a
+							href="https://t.me/sofiabei"
+							target="_blank"
+							class="workshop-card__button"
+							>Получить доступ →</a
+						>
+					</article>
+
+					<article class="workshop-card" data-reveal>
+						<div class="workshop-card__number">02</div>
+						<div class="workshop-card__gallery">
+							<img
+								src="images/workshops/Bracelet-2.webp"
+								alt="Браслет из жемчуга"
+								class="workshop-card__image"
+							/>
+							<img
+								src="images/workshops/Bracelet.webp"
+								alt="Процесс создания браслета"
+								class="workshop-card__image"
+							/>
+						</div>
+						<div class="workshop-card__tag">Для начинающих</div>
+						<h3 class="workshop-card__title">
+							Простой браслет из непростого жемчуга
+						</h3>
+						<p class="workshop-card__text">
+							Создадим браслет без сложных деталей, но из необычного плоского
+							жемчуга. Результат — как из ювелирного бутика.
+						</p>
+						<div class="workshop-card__includes">
+							<div class="workshop-card__includes-title">Что входит</div>
+							<ul class="workshop-card__list">
+								<li class="workshop-card__item">Видео мастер-класс</li>
+								<li class="workshop-card__item">
+									Список материалов: проф. магазины + Ozon
+								</li>
+								<li class="workshop-card__item">
+									Обратная связь по любым вопросам
+								</li>
+							</ul>
+						</div>
+						<div class="workshop-card__price">1 000 ₽</div>
+						<a
+							href="https://t.me/sofiabei"
+							target="_blank"
+							class="workshop-card__button"
+							>Получить доступ →</a
+						>
+					</article>
+
+					<article class="workshop-card" data-reveal>
+						<div class="workshop-card__number">03</div>
+						<div class="workshop-card__gallery">
+							<img
+								src="images/workshops/Necklace-2.webp"
+								alt="Колье из бусин"
+								class="workshop-card__image"
+							/>
+							<img
+								src="images/workshops/Necklace.webp"
+								alt="Процесс создания колье"
+								class="workshop-card__image"
+							/>
+						</div>
+						<div class="workshop-card__tag">Для начинающих</div>
+						<h3 class="workshop-card__title">
+							Колье из трендовых дофаминовых бусин
+						</h3>
+						<p class="workshop-card__text">
+							Создадим трендовое колье, которое продают от 6 000 ₽. Мы сделаем
+							его вдвое дешевле — и своими руками.
+						</p>
+						<div class="workshop-card__includes">
+							<div class="workshop-card__includes-title">Что входит</div>
+							<ul class="workshop-card__list">
+								<li class="workshop-card__item">Видео мастер-класс</li>
+								<li class="workshop-card__item">
+									Список материалов: проф. магазины + Ozon
+								</li>
+								<li class="workshop-card__item">
+									Обратная связь по любым вопросам
+								</li>
+							</ul>
+						</div>
+						<div class="workshop-card__price">1 200 ₽</div>
+						<a
+							href="https://t.me/sofiabei"
+							target="_blank"
+							class="workshop-card__button"
+							>Получить доступ →</a
+						>
+					</article>
+				</div>
+			</section>
+
+			<div class="lace">· · ✦ · · · ✦ · · · ✦ · ·</div>
+
+			<section class="suppliers section" id="suppliers">
+				<div class="section__header">
+					<p class="eyebrow section__eyebrow" data-reveal>Дополнительно</p>
+					<h2 class="title section__title" data-reveal>
+						База<br /><em>поставщиков</em>
+					</h2>
+				</div>
+				<div class="suppliers__card" data-reveal>
+					<div class="suppliers__content">
+						<div class="suppliers__eyebrow">Эксклюзивно для мастеров</div>
+						<div class="suppliers__title">
+							Файл с проверенными<br />магазинами по всей России
+						</div>
+						<ul class="check-list suppliers__list">
+							<li class="check-list__item">
+								Около 30 магазинов фурнитуры и камней
+							</li>
+							<li class="check-list__item">
+								Адреса, сайты и мои личные отзывы по каждому
+							</li>
+							<li class="check-list__item">
+								Доступ навсегда — список постоянно обновляется
+							</li>
+							<li class="check-list__item">Обратная связь по любым вопросам</li>
+						</ul>
+					</div>
+					<div class="suppliers__aside">
+						<div class="suppliers__price">3 000 ₽</div>
+						<div class="suppliers__label">доступ навсегда</div>
+						<a
+							href="https://t.me/sofiabei"
+							target="_blank"
+							class="suppliers__button"
+						>
+							Получить базу →
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<div class="lace">· · ✦ · · · ✦ · · · ✦ · ·</div>
+
+			<section class="consult section" id="consult">
+				<div class="section__header">
+					<p class="eyebrow section__eyebrow" data-reveal>Личная работа</p>
+					<h2 class="title section__title" data-reveal>
+						Консультация<br />для <em>начинающего мастера</em>
+					</h2>
+				</div>
+				<div class="consult__grid">
+					<div class="consult__copy">
+						<p class="consult__text">
+							Ты хочешь начать создавать украшения, но не знаешь, с чего начать?
+							Какую фурнитуру купить, где искать материалы, сколько тратить и
+							что вообще нужно для старта?
+						</p>
+						<p class="consult__text">
+							На личной консультации я помогу тебе разобраться именно в твоей
+							ситуации: составим список первых покупок под твой стиль и бюджет,
+							расскажу, где искать качественные материалы и как не потратить
+							лишнего.
+						</p>
+						<ul class="check-list consult__list">
+							<li class="check-list__item">
+								Разбор твоих целей и стиля украшений
+							</li>
+							<li class="check-list__item">
+								Составление списка первой фурнитуры
+							</li>
+							<li class="check-list__item">
+								Где покупать — проф. магазины и Ozon
+							</li>
+							<li class="check-list__item">
+								Советы по бюджету — что важно, что можно подождать
+							</li>
+							<li class="check-list__item">Ответы на все твои вопросы</li>
+						</ul>
+					</div>
+					<div class="consult__offer">
+						<div class="consult__eyebrow">Личная встреча в Telegram</div>
+						<div class="consult__price">10 000 ₽</div>
+						<div class="consult__label">за консультацию</div>
+						<blockquote class="consult__quote">
+							«После консультации ты выйдешь с чётким списком — без лишних трат
+							и сомнений»
+						</blockquote>
+						<a
+							href="https://t.me/sofiabei"
+							target="_blank"
+							class="consult__button"
+						>
+							Записаться →
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="how section" id="how">
+				<div class="how__inner">
+					<p class="eyebrow how__eyebrow" data-reveal>Как это работает</p>
+					<h2 class="title how__title" data-reveal>
+						От первого шага<br />до <em>готового украшения</em>
+					</h2>
+					<div class="how__steps">
+						<div class="how__step" data-reveal>
+							<div class="how__step-number">01</div>
+							<div class="how__step-content">
+								<div class="how__step-title">Выбираешь мастер-класс</div>
+								<p class="how__step-text">
+									Смотришь три варианта — или берёшь все три со скидкой 500 ₽.
+									Не уверена — напиши в Telegram, помогу выбрать.
+								</p>
+							</div>
+						</div>
+						<div class="how__step" data-reveal>
+							<div class="how__step-number">02</div>
+							<div class="how__step-content">
+								<div class="how__step-title">
+									Получаешь видеоурок и список материалов
+								</div>
+								<p class="how__step-text">
+									После оплаты — ссылка на видео и файл с материалами. Всё есть
+									как в профессиональных магазинах, так и на Ozon.
+								</p>
+							</div>
+						</div>
+						<div class="how__step" data-reveal>
+							<div class="how__step-number">03</div>
+							<div class="how__step-content">
+								<div class="how__step-title">Создаёшь украшение</div>
+								<p class="how__step-text">
+									Следуешь уроку в своём темпе. Возникнут вопросы — я всегда на
+									связи и отвечаю на всё.
+								</p>
+							</div>
+						</div>
+						<div class="how__step" data-reveal>
+							<div class="how__step-number">04</div>
+							<div class="how__step-content">
+								<div class="how__step-title">Носишь с гордостью</div>
+								<p class="how__step-text">
+									Готовое украшение — твоё, сделанное твоими руками. Это уже не
+									просто бижутерия — это история.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="lace">· · ✦ · · · ✦ · · · ✦ · ·</div>
+
+			<section class="reviews section" id="reviews">
+				<div class="reviews__header">
+					<p class="eyebrow reviews__eyebrow" data-reveal>Отзывы</p>
+					<h2 class="title reviews__title" data-reveal>
+						Что говорят<br /><em>ученицы</em>
+					</h2>
+				</div>
+				<div class="reviews__grid">
+					<article class="reviews__card" data-reveal>
+						<div class="reviews__stars">★★★★★</div>
+						<p class="reviews__text">
+							«Никогда не думала, что смогу сделать что-то настолько красивое.
+							София объясняет каждый шаг так понятно!»
+						</p>
+						<div class="reviews__author">Анна М.</div>
+						<div class="reviews__course">МК «Серьги»</div>
+					</article>
+					<article class="reviews__card" data-reveal>
+						<div class="reviews__stars">★★★★★</div>
+						<p class="reviews__text">
+							«Украшение получилось даже лучше, чем на фото. Теперь все подруги
+							спрашивают, где купила — говорю: сама сделала!»
+						</p>
+						<div class="reviews__author">Кристина В.</div>
+						<div class="reviews__course">МК «Браслет»</div>
+					</article>
+					<article class="reviews__card" data-reveal>
+						<div class="reviews__stars">★★★★★</div>
+						<p class="reviews__text">
+							«Колье из МК ничуть не хуже, чем за 6000₽ в магазине. Буду брать
+							все три сразу!»
+						</p>
+						<div class="reviews__author">Мария Г.</div>
+						<div class="reviews__course">МК «Колье»</div>
+					</article>
+				</div>
+			</section>
+
+			<div class="lace">· · ✦ · · · ✦ · · · ✦ · ·</div>
+
+			<section class="faq section" id="faq">
+				<div class="faq__inner">
+					<p class="eyebrow faq__eyebrow" data-reveal>Вопросы</p>
+					<h2 class="title faq__title" data-reveal>
+						Часто<br /><em>спрашивают</em>
+					</h2>
+					<div class="faq__list">
+						<div class="faq__item" data-faq-item data-reveal>
+							<button
+								class="faq__question"
+								type="button"
+								aria-expanded="false"
+								aria-controls="faq-answer-1"
+								data-faq-question
+							>
+								<span class="faq__question-text">Нужен ли опыт?</span>
+								<span class="faq__icon" aria-hidden="true"></span>
+							</button>
+							<div class="faq__answer" id="faq-answer-1" data-faq-answer>
+								Нет! Все три МК созданы специально для начинающих. Объясняю с
+								нуля — инструменты, техники, каждый шаг. Всё что нужно — желание
+								попробовать.
+							</div>
+						</div>
+						<div class="faq__item" data-faq-item data-reveal>
+							<button
+								class="faq__question"
+								type="button"
+								aria-expanded="false"
+								aria-controls="faq-answer-2"
+								data-faq-question
+							>
+								<span class="faq__question-text">Где купить материалы?</span>
+								<span class="faq__icon" aria-hidden="true"></span>
+							</button>
+							<div class="faq__answer" id="faq-answer-2" data-faq-answer>
+								После оплаты получишь файл со ссылками — на профессиональные
+								магазины и аналоги с Ozon. Найдёшь всё в любом городе.
+							</div>
+						</div>
+						<div class="faq__item" data-faq-item data-reveal>
+							<button
+								class="faq__question"
+								type="button"
+								aria-expanded="false"
+								aria-controls="faq-answer-3"
+								data-faq-question
+							>
+								<span class="faq__question-text">Сколько времени займёт?</span>
+								<span class="faq__icon" aria-hidden="true"></span>
+							</button>
+							<div class="faq__answer" id="faq-answer-3" data-faq-answer>
+								От 1 до 3 часов, в зависимости от твоего темпа. Видео и файл с
+								материалами остаются навсегда — можешь вернуться в любое время.
+							</div>
+						</div>
+						<div class="faq__item" data-faq-item data-reveal>
+							<button
+								class="faq__question"
+								type="button"
+								aria-expanded="false"
+								aria-controls="faq-answer-4"
+								data-faq-question
+							>
+								<span class="faq__question-text">
+									Можно задать вопрос в процессе?
+								</span>
+								<span class="faq__icon" aria-hidden="true"></span>
+							</button>
+							<div class="faq__answer" id="faq-answer-4" data-faq-answer>
+								Конечно! Пишешь мне в Telegram — отвечаю на все вопросы. Никто
+								не остаётся наедине с трудностями.
+							</div>
+						</div>
+						<div class="faq__item" data-faq-item data-reveal>
+							<button
+								class="faq__question"
+								type="button"
+								aria-expanded="false"
+								aria-controls="faq-answer-5"
+								data-faq-question
+							>
+								<span class="faq__question-text">
+									Выгодно ли брать все три МК сразу?
+								</span>
+								<span class="faq__icon" aria-hidden="true"></span>
+							</button>
+							<div class="faq__answer" id="faq-answer-5" data-faq-answer>
+								Да — по отдельности выйдет 2 800 ₽. При покупке набора — 2 300
+								₽. Экономия 500 ₽ и сразу три украшения в коллекции.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="cta section" id="cta">
+				<div class="cta__inner">
+					<p class="cta__eyebrow" data-reveal>Начни сейчас</p>
+					<h2 class="cta__title" data-reveal>
+						Твоё украшение ждёт,<br />чтобы его <em>создали</em>
+					</h2>
+					<p class="cta__text" data-reveal>
+						Выбери мастер-класс — и сделай первый шаг. Справится любая, даже без
+						опыта.
+					</p>
+					<div class="cta__cards" data-reveal>
+						<a href="https://t.me/sofiabei" target="_blank" class="cta__card">
+							<strong class="cta__card-title">Серьги</strong>
+							<span class="cta__card-text">Для начинающих · 600 ₽</span>
+						</a>
+						<a href="https://t.me/sofiabei" target="_blank" class="cta__card">
+							<strong class="cta__card-title">Браслет</strong>
+							<span class="cta__card-text">Из плоского жемчуга · 1 000 ₽</span>
+						</a>
+						<a href="https://t.me/sofiabei" target="_blank" class="cta__card">
+							<strong class="cta__card-title">Колье</strong>
+							<span class="cta__card-text">Дофаминовые бусины · 1 200 ₽</span>
+						</a>
+						<a
+							href="https://t.me/sofiabei"
+							target="_blank"
+							class="cta__card cta__card--featured"
+						>
+							<strong class="cta__card-title">Все три МК</strong>
+							<span class="cta__card-text">Скидка 500 ₽ · 2 300 ₽</span>
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__main">
+				<div class="footer__brand">
+					<a href="#" class="footer__logo" aria-label="LUMI">
+						<img
+							src="icons/logo-lumi-gold.svg"
+							alt=""
+							class="footer__logo-image"
+						/>
+					</a>
+					<p class="footer__tagline">Украшения из волшебства · by Sofia</p>
+				</div>
+				<div class="footer__legal">
+					<a href="oferta.html" class="footer__legal-link">Публичная оферта</a>
+					<a href="privacy.html" class="footer__legal-link">
+						Политика конфиденциальности
+					</a>
+					<a href="consent.html" class="footer__legal-link">
+						Согласие на обработку персональных данных
+					</a>
+				</div>
+				<div class="footer__action">
+					<a
+						href="https://t.me/sofiabei"
+						target="_blank"
+						class="button button--primary footer__button"
+						>Написать в Telegram →</a
+					>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				© 2025 LUMI · Lumify · Украшения ручной работы
+			</div>
+		</footer>
+
+	</body>
+</html>

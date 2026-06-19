@@ -1,0 +1,88 @@
+html {
+	scroll-behavior: smooth;
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-width: 320px;
+	background: var(--forest);
+	color: var(--cream);
+	font-family: var(--font-text);
+	font-size: 16px;
+	line-height: 1.7;
+	overflow-x: hidden;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button,
+[type="button"],
+[type="submit"] {
+	appearance: button;
+	-webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+::-webkit-scrollbar {
+	width: 4px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--forest);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--gold);
+	border-radius: 2px;
+}
