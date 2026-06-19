@@ -97,6 +97,7 @@
 	align-items: center;
 	justify-content: center;
 	border: 1px solid rgba(53, 91, 51, 0.28);
+	border-radius: 10px;
 	color: var(--gold);
 	text-decoration: none;
 	transition:

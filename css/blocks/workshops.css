@@ -86,6 +86,7 @@
 	align-items: center;
 	justify-content: center;
 	border: 0;
+	border-radius: 10px;
 	background: var(--cream);
 	color: var(--clay3);
 	font-family: var(--font-text);
@@ -169,7 +170,7 @@
 	grid-template-columns: 1fr 1fr;
 	gap: 2px;
 	margin-bottom: 28px;
-	border-radius: 8px;
+	border-radius: 14px;
 	overflow: hidden;
 }
 

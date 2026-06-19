@@ -19,7 +19,7 @@
 .about__image {
 	display: block;
 	width: 100%;
-	border-radius: 8px;
+	border-radius: 14px;
 }
 
 .about__photo::after {

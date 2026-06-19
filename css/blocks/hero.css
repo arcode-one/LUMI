@@ -99,6 +99,7 @@
 	max-width: 620px;
 	justify-self: end;
 	overflow: hidden;
+	border-radius: 14px;
 	aspect-ratio: 0.82 / 1;
 }
 
