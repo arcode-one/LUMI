@@ -140,6 +140,12 @@ h3 {
 		transform 0.7s ease;
 }
 
+.hero [data-reveal] {
+	opacity: 1;
+	transform: none;
+	animation: none;
+}
+
 .reveal--visible {
 	opacity: 1;
 	transform: translateY(0);
