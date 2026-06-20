@@ -165,6 +165,26 @@
 }
 
 @media (max-width: 820px) {
+	.hero__eyebrow {
+		animation-delay: 0.1s;
+	}
+
+	.hero__title {
+		animation-delay: 0.18s;
+	}
+
+	.hero__subtitle {
+		animation-delay: 0.26s;
+	}
+
+	.hero__text {
+		animation-delay: 0.34s;
+	}
+
+	.hero__actions {
+		animation-delay: 0.42s;
+	}
+
 	.hero__inner {
 		grid-template-columns: 1fr;
 	}

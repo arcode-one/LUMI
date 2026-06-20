@@ -18,7 +18,7 @@
 
 .consult__text {
 	margin-bottom: 28px;
-	color: rgba(247, 239, 226, 0.8);
+	color: var(--pearl);
 	font-size: 15px;
 	line-height: 1.9;
 }
@@ -60,10 +60,18 @@
 
 .consult__label {
 	margin-bottom: 32px;
-	color: rgba(247, 239, 226, 0.55);
+	color: var(--cream);
 	font-size: 13px;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
+}
+
+.consult .check-list__item {
+	color: var(--pearl);
+}
+
+.consult .check-list__item::before {
+	color: var(--cream);
 }
 
 .consult__quote {

@@ -26,7 +26,7 @@
 
 .footer__tagline {
 	margin-top: 8px;
-	color: rgba(36, 48, 39, 0.62);
+	color: #4d5c4d;
 	font-family: var(--font-title);
 	font-size: 13px;
 	font-style: italic;
@@ -42,7 +42,7 @@
 
 .footer__legal-link {
 	position: relative;
-	color: rgba(36, 48, 39, 0.66);
+	color: #4d5c4d;
 	font-size: 13px;
 	text-decoration: none;
 	transition: color 0.3s;
@@ -78,7 +78,7 @@
 }
 
 .footer__contacts-title {
-	color: rgba(36, 48, 39, 0.62);
+	color: #4d5c4d;
 	font-size: 11px;
 	letter-spacing: 0.18em;
 	text-transform: uppercase;
@@ -125,7 +125,7 @@
 	margin: 0 auto;
 	padding-top: 24px;
 	border-top: 1px solid rgba(53, 91, 51, 0.14);
-	color: rgba(36, 48, 39, 0.54);
+	color: #51604f;
 	font-size: 12px;
 	letter-spacing: 0.06em;
 	text-align: center;

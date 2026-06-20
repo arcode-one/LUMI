@@ -2,7 +2,6 @@ export function initHeroFireflies() {
 	const canvas = document.querySelector("[data-hero-canvas]");
 
 	if (!canvas) return;
-	if (window.matchMedia("(max-width: 768px)").matches) return;
 	if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
 	const ctx = canvas.getContext("2d");

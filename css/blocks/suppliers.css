@@ -47,7 +47,7 @@
 }
 
 .suppliers .check-list__item {
-	color: rgba(247, 239, 226, 0.76);
+	color: var(--pearl);
 }
 
 .suppliers .check-list__item::before {
@@ -69,7 +69,7 @@
 .suppliers__label {
 	margin-top: 4px;
 	margin-bottom: 20px;
-	color: rgba(247, 239, 226, 0.62);
+	color: var(--cream);
 	font-size: 12px;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;

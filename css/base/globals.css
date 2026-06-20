@@ -7,9 +7,12 @@
 	top: 0;
 	left: 0;
 	z-index: 1000;
-	width: 0%;
+	width: 100%;
 	height: 2px;
 	background: linear-gradient(90deg, var(--clay3), var(--clay-soft));
+	transform: scaleX(0);
+	transform-origin: left center;
+	will-change: transform;
 }
 
 .main {
@@ -163,7 +166,7 @@ h3 {
 	position: relative;
 	padding-left: 18px;
 	font-size: 14px;
-	color: rgba(247, 239, 226, 0.82);
+	color: var(--pearl);
 }
 
 .check-list__item::before {

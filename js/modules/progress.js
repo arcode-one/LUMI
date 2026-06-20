@@ -4,13 +4,22 @@ export function initProgressBar() {
 	if (!progress) return;
 
 	let ticking = false;
+	let maxScroll = 1;
+
+	function updateMaxScroll() {
+		maxScroll = Math.max(
+			1,
+			document.documentElement.scrollHeight - window.innerHeight,
+		);
+	}
 
 	function updateProgress() {
-		const scrollTop = document.documentElement.scrollTop;
-		const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-		progress.style.width = `${(scrollTop / scrollHeight) * 100 || 0}%`;
+		progress.style.transform = `scaleX(${Math.min(window.scrollY / maxScroll, 1)})`;
 		ticking = false;
 	}
+
+	updateMaxScroll();
+	updateProgress();
 
 	window.addEventListener(
 		"scroll",
@@ -22,4 +31,7 @@ export function initProgressBar() {
 		},
 		{ passive: true },
 	);
+
+	window.addEventListener("resize", updateMaxScroll, { passive: true });
+	window.addEventListener("load", updateMaxScroll, { once: true });
 }

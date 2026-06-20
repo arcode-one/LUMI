@@ -15,9 +15,16 @@ export function initNavigation() {
 
 	if (header) {
 		let ticking = false;
+		let isHeaderScrolled = false;
 
 		function updateHeaderState() {
-			header.classList.toggle(HEADER_SCROLLED_CLASS, window.scrollY > 60);
+			const shouldBeScrolled = window.scrollY > 60;
+
+			if (shouldBeScrolled !== isHeaderScrolled) {
+				header.classList.toggle(HEADER_SCROLLED_CLASS, shouldBeScrolled);
+				isHeaderScrolled = shouldBeScrolled;
+			}
+
 			ticking = false;
 		}
 
