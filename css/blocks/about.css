@@ -114,6 +114,12 @@
 	}
 }
 
+@media (max-width: 576px) {
+	.about__stats {
+		gap: 24px;
+	}
+}
+
 @media (max-width: 430px) {
 	.about__quote {
 		padding-left: 18px;

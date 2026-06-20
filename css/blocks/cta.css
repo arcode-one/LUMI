@@ -101,6 +101,12 @@
 	color: var(--cream);
 }
 
+@media (max-width: 1440px) {
+	.cta__text {
+		max-width: 620px;
+	}
+}
+
 @media (max-width: 1200px) {
 	.cta__cards {
 		gap: 14px;
