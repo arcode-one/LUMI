@@ -113,6 +113,7 @@
 
 .workshop-card__button:hover {
 	background: var(--pearl);
+	transform: translateY(-2px);
 }
 
 .workshops__grid {

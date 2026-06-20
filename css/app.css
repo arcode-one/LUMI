@@ -1340,6 +1340,7 @@ h3 {
 
 .workshop-card__button:hover {
 	background: var(--pearl);
+	transform: translateY(-2px);
 }
 
 .workshops__grid {
@@ -3007,4 +3008,3 @@ h3 {
 		font-size: 12px;
 	}
 }
-
