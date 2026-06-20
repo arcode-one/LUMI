@@ -283,6 +283,12 @@
 		grid-template-columns: repeat(2, 1fr);
 	}
 
+	.workshop-card:last-child:nth-child(odd) {
+		width: calc((100% - 2px) / 2);
+		grid-column: 1 / -1;
+		justify-self: center;
+	}
+
 	.workshop-card__title,
 	.workshop-card__text,
 	.workshop-card__includes {
@@ -305,6 +311,11 @@
 @media (max-width: 768px) {
 	.workshops__grid {
 		grid-template-columns: 1fr;
+	}
+
+	.workshop-card:last-child:nth-child(odd) {
+		width: 100%;
+		grid-column: auto;
 	}
 
 	.workshop-card {

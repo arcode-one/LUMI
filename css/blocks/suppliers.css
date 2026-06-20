@@ -113,11 +113,11 @@
 
 @media (max-width: 1024px) {
 	.suppliers__card {
-		grid-template-columns: 1fr;
+		grid-template-columns: minmax(0, 1fr) auto;
 	}
 
 	.suppliers__aside {
-		text-align: left;
+		text-align: right;
 	}
 }
 
@@ -141,7 +141,12 @@
 
 @media (max-width: 640px) {
 	.suppliers__card {
+		grid-template-columns: 1fr;
 		padding: 40px 32px;
+	}
+
+	.suppliers__aside {
+		text-align: left;
 	}
 }
 
